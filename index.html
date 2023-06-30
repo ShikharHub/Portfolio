@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb343f1d58.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo" alt="logo" height="90px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,<br> I'm <span>Shikhar Srivastava</span></h1>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.JPG" alt="My Photo"  height="650">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>I am flexible and can adapt to new situations and changes quickly and easily. I have a friendly personality and enjoy interacting with others. I am genuine, and people can see that I am authentic and honest. I am a hard worker and am always putting in the extra effort to achieve my goals.</p>
+                    
+                    <div class="titles">
+                        <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="links" onclick="opentab('edu')">Education</p>
+
+                    </div>
+                    <div class="contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Write bout It</li>
+                            <li><span>Data Analyst</span><br> Write bout It</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="edu">
+                        <ul>
+                            <li><span>BTech CSE</span><br> 77.9%</li>
+                            <li><span>12th</span><br> 72.80</li>
+                            <li><span>10th</span><br> 87.89</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ex hic quod recusandae nulla ea ad vel ipsum ut quia. Laborum nihil, deleniti aliquam tempore velit, ratione delectus dolores tempora numquam necessitatibus laudantium consequatur magni unde perferendis voluptate? Ipsa, vero perspiciatis quas deleniti sint repudiandae corrupti minus asperiores assumenda fugiat.</p>
+                    <!--<a href="#">Learn more</a>-->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>            <h2>Data Analyst</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ex hic quod recusandae nulla ea ad vel ipsum ut quia. Laborum nihil, deleniti aliquam tempore velit, ratione delectus dolores tempora numquam necessitatibus laudantium consequatur magni unde perferendis voluptate? Ipsa, vero perspiciatis quas deleniti sint repudiandae corrupti minus asperiores assumenda fugiat.</p>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub">My Work</h1>    
+            <div class="work-list">
+                <div class="work">
+                    <img src="PG.png" alt="Project">
+                    <div class="layer">
+                        <h3>Pg Booking Website</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quasi corrupti amet facilis molestias aperiam temporibus tempora sequi atque assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music app.png" alt="Project">
+                    <div class="layer">
+                        <h3>Music Player Website</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quasi corrupti amet facilis molestias aperiam temporibus tempora sequi atque assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="register.png" alt="Project">
+                    <div class="layer">
+                        <h3>College Registration Page</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quasi corrupti amet facilis molestias aperiam temporibus tempora sequi atque assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mycontact@pro.com</p>
+                    <p><i class="fa-solid fa-phone"></i>123456789</p>
+                    <div class="social-icons">
+                        <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright Shikhar... Thanks for Visiting...</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("links");
+        var tabcontents=document.getElementsByClassName("contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sideme=document.getElementById("sidemenu");
+        function openmenu(){
+            sideme.style.right=0;
+        }
+        function closemenu(){
+            sideme.style.right="-200px";
+        }
+    </script>
+
+    
+</body>
+</html>
